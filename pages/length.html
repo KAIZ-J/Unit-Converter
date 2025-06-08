@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Convert between meters, kilometers, inches, feet, and more with Fazi's length converter.">
+
+  <title>Length</title>
+   <link rel="stylesheet" href="/projects/portfolio/projects/conv/js and style/ucstyle.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kablammo|Sour Gummy|Atma">
+</head>
+
+<body>
+  <div class="container">
+    <br />
+<div class="container-1">
+  <a href="conv.html">
+    <img id="back" src="/projects/portfolio/assets/left-arrow.png" alt="" />
+  </a>
+</div>
+    <div id="display-conatiner" class="displays">
+    <div id="input-container" class="displayed">
+      
+    
+   
+    <label for="From" >From</label>
+      <select name="" id="From" class="select-unit">
+      <option value="1">m</option>
+      <option value="0.01">cm</option>
+      <option value="1000">km</option>
+      <option value="0.001">mm</option>
+      <option value="1e-9">nm</option>
+      <option value="1e-12">pm</option>
+            <option value="0.1">dm</option>
+            <option value="1609.34">mile</option>
+            <option value="0.3048">foot</option>
+            <option value="0.9144">yard</option>
+          
+            
+      </select>  </div> 
+    <input type="text" readonly id="inputbox" class="box" /> <br><br />  </div>
+    
+        <div id="this" class="displays">
+    <div id="mnm" class="displayed">
+      
+    
+   
+    <label for="to">To</label>
+      <select id="to" class="select-unit">
+         <option value="0.01">cm</option>
+            <option value="1">m</option>
+          <option value="1000">km</option>
+      <option value="0.001">mm</option>
+      <option value="1e-9">nm</option>
+      <option value="1e-12">pm</option>
+      <option value="0.1">dm</option>
+      <option value="1609.34">mile</option>
+      <option value="0.3048">foot</option>
+      <option value="0.9144">yard</option>
+      </select>  </div> 
+    <input type="text" readonly id="resultbox" class="box"/> <br><br />  </div>
+    <div id="buttons">
+     
+       <button onclick="add('9')">9</button>
+       <button onclick="add('8')">8</button>
+        <button onclick="add('7')">7</button>
+      <button onclick="del()" id="dl" class="bb">
+          <img class="" src="/projects/portfolio/assets/delete (1).png" alt="" />
+        </button>
+
+        <button onclick="add('6')">6</button>
+        <button onclick="add('5')">5</button>
+        <button onclick="add('4')">4</button> 
+         <button onclick="remove()" id="rv" class="bb">C</button>
+       
+    
+        <button onclick="add('3')">3</button>
+       <button onclick="add('2')">2</button>
+      <button onclick="add('1')">1</button> 
+      
+     <button onclick="add('0')">0</button>
+         <button onclick="add('00')">00</button>
+    <button onclick="add('.')">.</button>
+
+
+
+
+
+   
+<br />
+  
+    </div>
+    
+  </div> <br /><br />
+
+
+
+
+
+  <script src="/projects/portfolio/projects/conv/js and style/conv.js">
+  
+    
+  </script>
+</body>
+
+</html>

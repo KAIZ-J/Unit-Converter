@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Convert units instantly with Fazi's multi-functional unit converter – length, weight, temperature, and more.">
+
+    <title>Converter</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kablammo|Sour Gummy|Atma">
+    <style>
+      body {
+        background-color: rgb(36, 36, 36);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      button {
+        width: 110px;
+        height: 90px;
+        border-radius: 15px;
+        background-color: rgb(224, 221, 221);
+        font-size: 15px;
+        border: none;
+        color: black;
+        transition: 0.20s ease-out;
+        font-family: sour gummy;
+      }
+
+      #container {
+        background-color: rgb(211, 205, 205);
+        width: 400px;
+        height: 530px;
+        border-radius: 20px;
+      }
+
+      #buttons {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      button:hover {
+        transform: scale(0.9);
+      }
+
+
+
+      img {
+        width: 50px;
+      }
+
+      h2 {
+        text-align: center;
+        color: #80808080;
+        text-shadow: rgb(211, 205, 205) 0px 0px 10px;
+        font-family: Atma;
+      }
+     
+
+      @media (max-width:460px){
+        #container {
+        background-color: rgb(211, 205, 205);
+        width: 100%;
+       
+        border-radius: 20px;
+      
+        height: fit-content;
+        
+      }
+
+     
+      button {
+        width:100px;
+        height: 80px;
+        border-radius: 10px;
+        font-size: 1rem;
+       
+      }
+       
+       img {
+        width: 30px;
+        height: 30px;
+       
+      }
+      
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <br />
+      <br />
+      <h2>Unit Converter</h2>
+      <br /><br />
+      <div id="buttons">
+        <a href="length.html">
+          <button class="btn-length">
+            <img src="/projects/portfolio/assets/length.png" alt="" /><br />
+            Length
+          </button>
+        </a>
+        <a href="mass.html">
+          <button class="btn-mass">
+            <img src="/projects/portfolio/assets/load (2).png" alt="" /><br />
+            Mass
+          </button>
+        </a>
+        <a href="temperature.html">
+          <button class="btn-temp">
+            <img
+              src="/projects/portfolio/assets/thermometer (1).png"
+              alt=""
+            /><br />
+            Temp
+          </button>
+        </a>
+      <a href="/projects/portfolio/projects/conv/pages/time.html"> <button class="btn-time">
+          <img src="/projects/portfolio/assets/clock (1).png" alt="" /><br />
+          Time
+        </button> </a> 
+       <a href="/projects/portfolio/projects/conv/pages/volume.html"><button class="btn-volume">
+          <img src="/projects/portfolio/assets/volume (1).png" alt="" /><br />
+          Volume
+        </button> </a> 
+       <a href="/projects/portfolio/projects/conv/pages/speed.html">
+        <button class="btn-speed">
+          <img
+            src="/projects/portfolio/assets/speedometer (1).png"
+            alt=""
+          /><br />
+          Speed
+        </button> </a>
+        <a href="area.html">
+          <button class="btn-area">
+            <img src="/projects/portfolio/assets/area.png" alt="" /><br />
+            Area
+          </button>
+        </a>
+        <a href="/projects/portfolio/projects/conv/pages/data.html"><button class="btn-data">
+         <img src="/projects/portfolio/assets/database.png" alt="">
+         <br>
+          Data 
+        </button> </a>
+        <button class="btn-discount">
+          
+          Discount (unavailable)
+        </button>
+        
+
+        <br />
+      </div>
+    </div>
+    <br /><br />
+  </body>
+</html>
