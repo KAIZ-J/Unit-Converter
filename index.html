@@ -3,157 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Convert units instantly with Fazi's multi-functional unit converter – length, weight, temperature, and more.">
-
-    <title>Converter</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kablammo|Sour Gummy|Atma">
-    <style>
-      body {
-        background-color: rgb(36, 36, 36);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      button {
-        width: 110px;
-        height: 90px;
-        border-radius: 15px;
-        background-color: rgb(224, 221, 221);
-        font-size: 15px;
-        border: none;
-        color: black;
-        transition: 0.20s ease-out;
-        font-family: sour gummy;
-      }
-
-      #container {
-        background-color: rgb(211, 205, 205);
-        width: 400px;
-        height: 530px;
-        border-radius: 20px;
-      }
-
-      #buttons {
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: repeat(3, 1fr);
-        margin-left: 10px;
-        margin-right: 10px;
-      }
-
-      button:hover {
-        transform: scale(0.9);
-      }
-
-
-
-      img {
-        width: 50px;
-      }
-
-      h2 {
-        text-align: center;
-        color: #80808080;
-        text-shadow: rgb(211, 205, 205) 0px 0px 10px;
-        font-family: Atma;
-      }
-     
-
-      @media (max-width:460px){
-        #container {
-        background-color: rgb(211, 205, 205);
-        width: 100%;
-       
-        border-radius: 20px;
-      
-        height: fit-content;
-        
-      }
-
-     
-      button {
-        width:100px;
-        height: 80px;
-        border-radius: 10px;
-        font-size: 1rem;
-       
-      }
-       
-       img {
-        width: 30px;
-        height: 30px;
-       
-      }
-      
-      }
-    </style>
+    <meta
+      name="description"
+      content="Convert a measurement from one unit of measurement to another within the same category (length, weight, volume, etc.)."
+    />
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
   </head>
-
   <body>
+    <nav>
+      <h1>Unit Converter</h1>
+      <select id="conv">
+        <option value="length">Length</option>
+        <option value="mass">Mass</option>
+        <option value="area">Area</option>
+        <option value="data">Data</option>
+        <option value="volume">Volume</option>
+        <option value="time">Time</option>
+        <option value="speed">Speed</option>
+        <option value="temp">Temperature</option>
+      </select>
+    </nav>
     <div id="container">
-      <br />
-      <br />
-      <h2>Unit Converter</h2>
-      <br /><br />
-      <div id="buttons">
-        <a href="pages/length.html">
-          <button class="btn-length">
-            <img src="assets/length.png" alt="" /><br />
-            Length
-          </button>
-        </a>
-        <a href="pages/mass.html">
-          <button class="btn-mass">
-            <img src="assets/load (2).png" alt="" /><br />
-            Mass
-          </button>
-        </a>
-        <a href="pages/temperature.html">
-          <button class="btn-temp">
-            <img
-              src="assets/thermometer (1).png"
-              alt=""
-            /><br />
-            Temp
-          </button>
-        </a>
-      <a href="pages/time.html"> <button class="btn-time">
-          <img src="assets/clock (1).png" alt="" /><br />
-          Time
-        </button> </a> 
-       <a href="pages/volume.html"><button class="btn-volume">
-          <img src="assets/volume (1).png" alt="" /><br />
-          Volume
-        </button> </a> 
-       <a href="pages/speed.html">
-        <button class="btn-speed">
-          <img
-            src="assets/speedometer (1).png"
-            alt=""
-          /><br />
-          Speed
-        </button> </a>
-        <a href="pages/area.html">
-          <button class="btn-area">
-            <img src="assets/area.png" alt="" /><br />
-            Area
-          </button>
-        </a>
-        <a href="pages/data.html"><button class="btn-data">
-         <img src="assets/database.png" alt="">
-         <br>
-          Data 
-        </button> </a>
-        <button class="btn-discount">
-          
-          Discount (unavailable)
-        </button>
-        
+      <div id="section1">
+        <input type="number" id="inputbox" placeholder="your input here"/>
+        <select id="from" class="select">
+          <option value="1">m</option>
+          <option value="0.01">cm</option>
+          <option value="1000">km</option>
+          <option value="0.001">mm</option>
+          <option value="1e-9">nm</option>
+          <option value="1e-12">pm</option>
+          <option value="0.1">dm</option>
+          <option value="1609.34">mile</option>
+          <option value="0.3048">foot</option>
+          <option value="0.9144">yard</option>
+        </select>
 
-        <br />
+        <label for="to">→</label>
+        <select id="to" class="select">
+          <option value="1">m</option>
+          <option value="0.01">cm</option>
+          <option value="1000">km</option>
+          <option value="0.001">mm</option>
+          <option value="1e-9">nm</option>
+          <option value="1e-12">pm</option>
+          <option value="0.1">dm</option>
+          <option value="1609.34">mile</option>
+          <option value="0.3048">foot</option>
+          <option value="0.9144">yard</option>
+        </select>
+      </div>
+
+      <input type="number" readonly id="resultbox" />
+      <div id="buttons">
+        <button onclick="add('9')">9</button>
+        <button onclick="add('8')">8</button>
+        <button onclick="add('7')">7</button>
+        <button onclick="del()" class="operator-button">Del</button>
+
+        <button onclick="add('6')">6</button>
+
+        <button onclick="add('5')">5</button>
+        <button onclick="add('4')">4</button>
+
+        <button onclick="add('3')">3</button>
+        <button onclick="add('2')">2</button>
+        <button onclick="add('1')">1</button>
+        <button onclick="remove()" class="operator-button">C</button>
+        <button onclick="add('0')">0</button>
+        <button onclick="add('00')">00</button>
+        <button onclick="add('.')">.</button>
       </div>
     </div>
-    <br /><br />
+
+    <script src="/script.js"></script>
   </body>
 </html>
